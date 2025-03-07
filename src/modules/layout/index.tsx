@@ -127,10 +127,9 @@ const Layout = (props: Props) => {
                 justifyContent: "space-between",
                 alignItems: "center",
                 width: "100%",
-                gap: 2,
+                gap: 4,
               }}
             >
-              {/* Search Box */}
               <Paper
                 component="form"
                 sx={{
@@ -196,13 +195,14 @@ const Layout = (props: Props) => {
                 <Box
                   sx={{
                     display: { xs: "none", sm: "block" },
+                    minWidth:{xs: 0, sm: '90px'},
                     color: "white",
                     fontWeight: "600",
                     fontSize: "12px",
                   }}
                 >
                   {/* User name */}
-                  <span style={{ textTransform: "none" }}>User Name</span>
+                  <span style={{ textTransform: "none" }}>John due</span>
                   {open ? (
                     <KeyboardArrowUpIcon sx={{ fontSize: "24px" }} />
                   ) : (
